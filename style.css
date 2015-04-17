@@ -1,0 +1,95 @@
+#text {
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 251, 145);
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 12px;
+  font-style: bold;
+  height: auto;
+  width: auto;
+  /*word-break: break-all;*/
+  z-index: 100;
+}
+#html, #css, #js {
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 18px;
+  font-style: bold;
+  height: auto;
+  margin: 5px;
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+  top: 0px;
+  /*white-space: pre-wrap;*/
+  z-index: 100;
+}
+#desc {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li:before {
+  content: counter(item, decimal-leading-zero) "| ";
+  counter-increment: item;
+  float: left;
+}
+/*-------------------------HTML-------------------------*/
+#html-com {
+  color: rgb(127, 127, 127);
+  font-style: italic;
+}
+#html-tag {
+  color: rgb(174, 154, 255);
+}
+#html-att {
+  color: rgb(249, 108, 100);
+}
+#html-val {
+  color: rgb(110, 175, 255);
+}
+/*-------------------------CSS-------------------------*/
+#css-com {
+  color: rgb(127, 127, 127);
+  font-style: italic;
+}
+#css-sel {
+  color: rgb(249, 108, 100);
+}
+#css-sel-ext {
+  color: rgb(255, 171, 122);
+}
+#css-prop {
+  color: rgb(174, 154, 255);
+}
+#css-val {
+  color: rgb(144, 255, 180);
+}
+#css-unt {
+  color: rgb(110, 175, 255);
+}
+/*-------------------------JS-------------------------*/
+#js-set {
+  color: rgb(255, 171, 122);
+}
+#js-com {
+  color: rgb(127, 127, 127);
+  font-style: italic;
+}
+#js-sel {
+  color: rgb(110, 175, 255);
+}
+#js-val {
+  color: rgb(174, 154, 255);
+}
+#js-char {
+  color: rgb(249, 108, 100);
+}
+#js-prop {
+  color: rgb(144, 255, 180);
+}
